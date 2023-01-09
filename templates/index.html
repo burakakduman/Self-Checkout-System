@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+	<title>Self Checkout</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons/favicon.png') }}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animate/animate.css') }}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/css-hamburgers/hamburgers.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/daterangepicker/daterangepicker.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/daterangepicker/daterangepicker.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" >
+			<div class="wrap-login100 p-t-30 p-b-50">
+				<span class="login100-form-title p-b-41">
+					LÜTFEN ÜRÜNÜ OKUTUNUZ
+				</span>
+				<form class="login100-form validate-form p-b-33 p-t-5" action="{{ url_for('working') }}" method="post">
+					
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">	
+						<center><img class="LocalPay" src="{{ url_for('static', filename='images/unnamed.png') }}"/></center>						
+						<div class="lottie" id="1">
+							<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_fyhgeab1.json" background="transparent" speed="1" loop autoplay></lottie-player>
+						  </div>
+						
+						<input class="input100" type="text" name="name" placeholder="Ürün Giriniz:">
+						<span class="focus-input100" data-placeholder=""></span>
+						
+					</div>
+
+					
+					
+					<div class="container-login100-form-btn m-t-32">
+						<!-- <button class="login100-form-btn mr-3" type="submit" name="action" value="gonder">Ürün Ekle</a></button><br>
+						<button class="login100-form-btn" name="action" value="sepet">Sepete Git</a><br><br></button> -->
+
+						<td><button type="submit"  name="action" value="gonder" class="login100-form-btn mr-3">ÜRÜN EKLE</button></td><br>
+          				<td><button type="submit"  name="action" value="sepet" class="login100-form-btn">SEPETE GİT</button></td><br>
+							
+					</div>
+					
+				</form>
+			</div>
+		</div><div class="container text-center">
+			<span class="creditwest">credit<span class="kırmızı">w</span>est</span>
+	</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/animsition/js/animsition.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/popper.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/daterangepicker/moment.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/daterangepicker/daterangepicker.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/countdowntime/countdowntime.js') }}"></script>
+<!--===============================================================================================-->
+
+</body>
+</html>
